@@ -25,7 +25,6 @@ services:
     
 volumes:
   jenkins_data:
-    driver: local
 
 configs:
   jenkins-init.sh:
