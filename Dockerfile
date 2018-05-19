@@ -7,7 +7,9 @@ RUN apt-get -qq update \
 && apt-get -qq -y install --no-install-recommends \
     apt-transport-https \
     ca-certificates \
+    libltdl.so.7 \
     curl \ 
+    libltdl-dev \
     gnupg2 \
     software-properties-common && \
     curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - && \
