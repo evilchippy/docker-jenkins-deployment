@@ -2,13 +2,13 @@
 
 DATE=$(date -I)
 
-docker build . --no-cache -t jamessmith52963/jenkins:$DATE
-docker tag jamessmith52963/jenkins:$DATE jamessmith52963/jenkins:lts 
-docker tag jamessmith52963/jenkins:$DATE jamessmith52963/jenkins:latest
+docker build . --no-cache -t evilchippy/jenkins:$DATE
+docker tag evilchippy/jenkins:$DATE evilchippy/jenkins:lts 
+docker tag evilchippy/jenkins:$DATE evilchippy/jenkins:latest
 
-docker push jamessmith52963/jenkins:$DATE
-docker push jamessmith52963/jenkins:latest
-docker push jamessmith52963/jenkins:lts
+docker push evilchippy/jenkins:$DATE
+docker push evilchippy/jenkins:latest
+docker push evilchippy/jenkins:lts
 
 docker stack rm jenkins
 sleep 15
