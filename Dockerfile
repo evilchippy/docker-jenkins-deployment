@@ -21,4 +21,6 @@ RUN apt-get -qq update \
     chmod +x /usr/local/bin/docker-compose && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+RUN usermod -a -G staff,docker jenkins
+
 
