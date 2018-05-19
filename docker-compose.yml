@@ -21,11 +21,9 @@ services:
     configs:
       - source: jenkins-init.sh
         target: /usr/local/bin/jenkins-init.sh
-        mode: 0777
-    
+        mode: 0777    
 volumes:
-  jenkins_data:
-
+  jenkins_data
 configs:
   jenkins-init.sh:
     file: ./jenkins-init.sh
