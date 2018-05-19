@@ -7,7 +7,7 @@ RUN apt-get -qq update \
 && apt-get -qq -y install --no-install-recommends \
     apt-transport-https \
     ca-certificates \
-    libltdl.so.7 \
+    libltdl7 \
     curl \ 
     libltdl-dev \
     gnupg2 \
