@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   jenkins:
-    image: evilchippy/jenkins:lts
+    image: evilchippy/jenkins_swarm:lts
     entrypoint: ["/sbin/tini", "--", "/usr/local/bin/jenkins-init.sh"] 
     deploy:
       replicas: 1
