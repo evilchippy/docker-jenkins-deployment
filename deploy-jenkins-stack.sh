@@ -13,4 +13,4 @@ docker push evilchippy/jenkins:lts
 docker stack rm jenkins
 sleep 15
 
-docker stack deploy -c docker-compose.yml jenkins
+docker stack deploy -c "docker-compose.yml" jenkins
