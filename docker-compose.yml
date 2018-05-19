@@ -10,7 +10,7 @@ services:
         condition: any
       placement:
         constraints:
-           - node.hostname == docker1
+          - node.hostname == docker1
     volumes:
       - jenkins_data:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
@@ -24,6 +24,7 @@ services:
         mode: 0777    
 volumes:
   jenkins_data:
+    driver: local
 configs:
   jenkins-init.sh:
     file: ./jenkins-init.sh
