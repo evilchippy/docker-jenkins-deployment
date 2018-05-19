@@ -3,4 +3,4 @@ FROM jenkins/jenkins:lts
 USER root
 
 RUN apt-get update \
-    && apt-get install --reinstall -y libltdl7
+    && apt-get install -y apt-utils libltdl7
